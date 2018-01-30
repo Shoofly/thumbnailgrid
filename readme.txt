@@ -1,29 +1,37 @@
-﻿=== Plugin Name ===
+=== Plugin Name ===
 Contributors: nomadcoder
-Donate link: https://www.paypal.com/us/cgi-bin/webscr?cmd=_flow&SESSION=gqjtYzw8TuOyQvmQDK0qTTaTyzz5z36k0xjc6N4cTQ8KzTc7asPw59FljVq&dispatch=5885d80a13c0db1f8e263663d3faee8d96f000117187ac9edec8a65b311f447e
+Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=FTBD2UDXFJDB6
 Tags: featured image, thumbnail grid
-Requires at least: 
-Tested up to: 4.3
+Requires at least:
+Tested up to: 4.9
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Visit the web site for detailed examples.
+
+Display a post Thumbnail Grid using Featured Images
+
+== Description ==
+
+Visit the web site for detailed examples. Click on Shortcodes
+http://www.shooflysolutions.com/software/wordpress-plugins/featured-image-thumbnail-grid-for-wordpress/
 
 This plugin gives you access to two simple shortcodes that display post thumbnails in a grid. The plugin uses the featured image thumbnail if one exists. If one does not exist, the default thumbnail (if it exists) or title will be displayed instead. Use the category feature to ensure that all of the posts that you want to display in this manner have thumbnails.
 
-For quicker support, please visit the <a href="http://www.shooflysolutions.com/software/featured-image-thumbnail-grid-for-wordpress/">NEW plugin web page</a>. 
- 
-http://www.shooflysolutions.com/software/featured-image-thumbnail-grid-for-wordpress/
+For instructions, shortcode descriptions & examples please visit the <a href="http://www.shooflysolutions.com/software/featured-image-thumbnail-grid-for-wordpress/">plugin web page</a>.
 
-Please be kind and rate this plugin. Everything helps! 
+Visit the new  <a href="http://www.shooflysolutions.com/forums/">forums</a> or  <a href="http://www.shooflysolutions.com">send us a message</a>.
+
+Please be kind and rate this plugin. Everything helps!
 
 
 == Description ==
-Version 5.5
 
-Donations for extended support are appreciated but are never required!  
 
-This plugin gives you access to two simple shortcodes that display posts and bookmark thumbnails in a grid. The plugin uses the featured image thumbnail if one exists. If one does not exist, the title will be displayed instead. Use the category feature to ensure that all of the posts that you want to display in this manner have thumbnails.
+For quicker support, please visit our website, read the faqs and email us at support@shooflysolutions.com.
+
+Donations for extended support are appreciated but are never required!
+
+This plugin gives you access to two a simple shortcake to display post thumbnails in a grid. The plugin uses the featured image thumbnail if one exists. If one does not exist, the title will be displayed instead. Use the category feature to ensure that all of the posts that you want to display in this manner have thumbnails.
 
 This plugin is not designed to show several pages of thumbnails, rather it is designed to allow you to embed thumbnails into any page or to display a subset of thumbnails on a page. To show more thumbnails on a page than the default value Blog pages show at most, use a fixed value for posts_per_page or try setting the posts_per_page value to ’999′.
 
@@ -58,11 +66,7 @@ Will display the thumbnails for the 5 most recent posts from the category with t
 [thumbnailgrid]
 Will display the thumbnails using the default value in the Reading settings Blog pages show at most.
 
-Bookmarks (Links)
 
-Bookmark links can also be displayed clickable as thumbnails. If your installation of  Wordpress is missing Links, you can install the plugin.  Set the thumbnail image in the advanced section of the “Edit Link” screen where it says “Image Address”. Because there is no look-up feature on this administrative page. If you are using images from your own media library you may want to install this handy plugin
-
-You can use any of the parameters listed on the WordPress Codex page for bookmarks. Note that for bookmarks, you should use category instead of cat.
 
 Examples:
 
@@ -80,7 +84,7 @@ Visit  <a href="http://www.shooflysolutions.com/software/featured-image-thumbnai
 height
 The height of thumbnail image. This value defaults to the height of the thumbnail or the setting in the style sheet.
 
-width 
+width
 The width of the thumbnail image. This value defaults to the width of the thumbnail or the setting in the style sheet. To display an image proportionately, set this value to ‘auto’;
 
 gridwidth
@@ -89,7 +93,7 @@ The width of the grid. this value defaults to the width of the grid area or to t
 maxgridwidth
 The maximum width of the grid. This is the better option to use when aligning grid left/right/center if you want the grid to wrap
 
-showcaption 
+showcaption
 Set showcaption=FALSE to hide the captions showcaption defaults to TRUE
 
 captionheight
@@ -102,20 +106,20 @@ wraptext
 Wrap the text in the caption. Normally the text is limited to one line and overflow is indicated by an elipses. Please note that, to avoid a misaligned grid, you should set a caption height when wrapping text in a grid that has more than one row. wraptext defaults to FALSE
 
 aligngrid
-When the gridwidth value is set, set this value to left, right,  center or autocenter (uses jQuery) 
+When the gridwidth value is set, set this value to left, right,  center or autocenter (uses jQuery)
 
 imagesize
 Media Image sizes are configured in the wordpress admin panel under Settings/Media. You can use any size in the plugin. The default value is ‘thumb’. thumb thumbnail medium large post-thumbnail (To proportionately size images, try setting the height="100%" width="auto")
 
 Added support for codex features that were not loading through the shortcode:
 
-before 
+before
 show posts before a specific date. As a feature of this plugin, you can set this field to before="today"
 
-after 
+after
 show posts after a specific date. As a feature of this plugin, you can set this field to after="today"
 
-inclusive 
+inclusive
 include the before and/or after date in the query
 
 post__not_in
@@ -125,17 +129,17 @@ post__in
 include posts (comma delimited id's) in this list
 
 post_parent__in
-include posts (comma delimited id's) with parent id's in this list.  Would be handy for post_type="page" 
+include posts (comma delimited id's) with parent id's in this list.  Would be handy for post_type="page"
 post_parent__not_in
-exclude posts (comma delimited id's) with parent id's in this list.  Would be handy for post_type="page" 
+exclude posts (comma delimited id's) with parent id's in this list.  Would be handy for post_type="page"
 
 tag_slug__and
-include posts (comma delimited strings) with tags that match all of the tag slugs in this list. 
+include posts (comma delimited strings) with tags that match all of the tag slugs in this list.
 
 tag_slug__in
 exclude posts (comma delimited strings) that have a tag that matches any of the tags in this list
 
-debug_query 
+debug_query
 for advanced users or upon request for support purposes, set debug_query=true to view the SQL query.
 
 == Installation ==
@@ -242,27 +246,48 @@ Visit the Web Site (and the Support page on Wordpress) for more tips: http://www
 
 == Screenshots ==
 
-1. This is a screenshot taken from our old web site. Please visit http://www.shooflysolutions.com/shortcodes/ to see the thumbnail demos.
+1. This is a screenshot taken from our old web site. Please visit http://www.shooflysolutions.com to see the thumbnail demos.
 
 2. To view or modify "Blog Pages Show at most, go to the reading section of your Wordpress Settings
 
 3. Settings page - Settings for the Thumbnail Grid can be found under the Settings Menu
 
 == Changelog ==
+* =Version 6.5
+* =Update version information
+* =Tell users about our new plugin
+* =Version 6.4
+* =Fix introduced bug
+* =Version 6.3
+* =Use taxonomy for the category instead of cat for posts
+* =Version 6.2
+* =Allow category as alternative to cat
+* =Allow debug as alternative to debug_query
+* =6.1
+* Fix description
+* add script kiddies control
+* =6.0
+* Added post id data to thumbnail for javascript
+* Fix default values
+* Fix missing id for thumbnail grid
+* Fix processing of boolean values
+* Add has_thumbnails setting
+* Remove support for bookmarks
+* Better script loading
 * =5.5
 * Add ability to open links in new page, target shortcode (target ="_blank")
 * Fill in missing alt from links
-* =5.4 
+* =5.4
 * Add missing javascript for autocenter
 * Fix autocenter when number of items in grid is less than can fit in content
 * Fix some of the __not_in code, not working natively
 * =5.3
-* Grid now has a class for the page. This is only unique if there is only one grid on the page. 
-* Add new filter to modify the title 
+* Grid now has a class for the page. This is only unique if there is only one grid on the page.
+* Add new filter to modify the title
 * Fix filter for text under the title
-* New param maxgridwidth. You can now set maxgridwidth instead (or with) width. This will enable grid to wrap when using aligngrid. 
+* New param maxgridwidth. You can now set maxgridwidth instead (or with) width. This will enable grid to wrap when using aligngrid.
 * Fix post_parent__not_in
-* New param aligngrid="autocenter" - Uses jQuery to keep the grid centered for themes where centering is not working. 
+* New param aligngrid="autocenter" - Uses jQuery to keep the grid centered for themes where centering is not working.
 * Another fix for empty settings
 * =5.2
 * Fix broken settings
@@ -273,14 +298,13 @@ Visit the Web Site (and the Support page on Wordpress) for more tips: http://www
 * Add ability to display posts created before or after a today.
 * Add code to enable dump of query (debug_query)* = 4.0
 * Add settings & setting page for loading style sheets in header or footer - option to load compressed style sheet.
-
-* = 3.1.1 
+* = 3.1.1
 * Remove nags.
 * = 3.1
 * Another Version number change to try to get plugin back onto wordpress repository?
 * = 3.0.1 -
 * Remove update checker
-* = 3.0.0 - 
+* = 3.0.0 -
 * Added filters to plugin for Extensions.
 * New shortcodes aligngrid, gridwidth, captionheight, displaycaption and imagesize.
 * = 2.1.2 - Remove comments that (we think) wordpress is changing to <p>carriage returns.</p>
@@ -297,7 +321,7 @@ Visit the Web Site (and the Support page on Wordpress) for more tips: http://www
 * Remove extra quote after link title
 = 1.0 =
 * Original Release
- 
+
 
 
 == Arbitrary section ==

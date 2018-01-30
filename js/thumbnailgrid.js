@@ -19,7 +19,7 @@ function setContainerWidth()
         maxBoxPerRow = 1;
     if (maxBoxPerRow > children)
         maxBoxPerRow = children;
-  //  jQuery('.tbgrd_autocenter').effect( "size", {    to: { 'width': maxBoxPerRow * blockWidth }  }, 1000 );;
+
     container.width(maxBoxPerRow * blockWidth);
     //*This can happen when the window goes below 380 on crappy devices*/
     if (container.width() > container.parent().width()) { 
